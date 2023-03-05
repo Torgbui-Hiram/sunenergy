@@ -58,6 +58,16 @@
             </div>
         </nav>
         <div class="containers">
+            <div class="mess">
+                {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Hi! customer </strong> {{message}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
             <header class="item header">
                 <div class="htop">
                     <img src="{% static 'img/a.jpg' %}" alt="">
@@ -131,6 +141,8 @@
 
                     Don’t wait any longer –
                 </p>
+                <br>
+                <a href="{% url 'quote' %}">Get a quote now</a>
             </main>
             <footer class="item bellow">
                 <div class="grid-item1"><i class="fa-solid fa-location-dot"></i>
