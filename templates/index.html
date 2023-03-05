@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        SUNENERGY
+    </title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    {% block content %}
+    <div class="frame">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="{% static 'img/logo.jpg' %}" alt="Logo" width="100" height="60"
+                    class="d-inline-block align-text-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><img class="home"
+                                    src="{% static 'img/dynnamitt_home.png' %}" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="containers">
+            <header class="item header">
+                <h1>SOLAR EXPECTS</h1>
+            </header>
+            <div class="item pic">
+                <img src="{% static 'img/10.jpg' %}" alt="">
+                <img src="{% static 'img/3.jpg' %}" alt="">
+                <img src="{% static 'img/9.jpg' %}" alt="">
+            </div>
+            <main class="item main-page">
+                <h1>WELCOME TO SUNENERGY</h1>
+                <p> your one-stop shop for solar system and inverter installation and servicing. We are dedicated to
+                    bringing you the best in solar energy solutions for your home or
+                    business.your local source for solar energy solutions and services!
+                    We are dedicated to providing our customers with the highest quality products and services,
+                    and the best customer service experience.
+                </p>
+                <br>
+                <p> Our experienced team of professionals offers personalized solar energy solutions to meet your
+                    individual needs and budget.
+                    We offer a wide range of solar energy products and services,
+                    including solar panels, solar energy systems, solar hot water systems, solar pool heating
+                    systems,and more.
+                </p>
+                <br>
+                <p> We also offer solar energy financing options to help you get the best value for your money.
+                    Our team of professionals is committed to helping you make the most of your solar energy
+                    investment.
+                    We provide comprehensive support and guidance throughout the entire process,
+                    from initial consultation to installation and maintenance.
+                </p>
+                <br>
+                <h2>AT SUNENERGY</h2>
+                <p>
+                    we understand the importance of a reliable and efficient solar energy system.
+                    We guarantee our customers reliable, cost-effective solar systems that will save you money and
+                    reduce your carbon footprint.
+                    Our experienced technicians provide high-quality installations and servicing with minimal
+                    disruption to your property.
+                </p>
+                <p> we are passionate about helping our customers save money and reduce their carbon footprint. We
+                    are
+                    committed to providing our customers <br>
+                    with the best products and services available, at the most competitive prices.
+                    Thank you for visiting SUNENERGY SOLUTION LTD. We look forward to helping you with all of your
+                    solar
+                    energy needs!
+                </p>
+
+                <br>
+                <h2> WITH A SOLAR SYSTEM FROM SUNENERGY YOU CAN EXPECT</h2>
+
+                <p> ➡ Maximum efficiency – We ensure that your solar system is designed to maximize energy
+                    production and reduce energy losses. <br>
+
+                    ➡ Cost savings – With a solar system from SUNENERGY, you can save money on your electricity
+                    bills and even earn money through Feed-in Tariffs. <br>
+
+                    ➡ Increased property value – Installing a solar system can increase the value of your property.
+                    <br>
+
+                    ➡ Reliability – Our solar systems are built to last and come with a 5-year warranty. <br>
+
+                    ➡ Professional installation and servicing – Our experienced technicians will provide
+                    professional installation and servicing to ensure that your solar system is running efficiently.
+                    <br>
+
+                    Don’t wait any longer –
+                </p>
+            </main>
+            <footer class="item bellow">
+                <div class="grid-item1"><i class="fa-solid fa-location-dot"></i>
+                    <p>
+                        Location: <br>
+                        Block 2 & 3, Elim House (Head Office) <br>
+                        Teshie Grada Estate.
+                    </p>
+                </div>
+                <div class="grid-item2"><i class="fa-solid fa-envelope"></i>
+                    <P>
+                        Message Us:
+                    </P>
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </a>
+                </div>
+                <div class="grid-item3"><i class="fa-solid fa-phone"></i>
+                    <p>
+                        CONTACT: <br>
+                        +233553905772 <br>
+                        +233506795043
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    {% endblock %}
+    <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/496ed94260.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

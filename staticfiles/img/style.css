@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.frame {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "header header header"
+    "pic pic pic"
+    "main-page main-page main-page"
+    "bellow bellow bellow";
+}
+
+.item {
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+.containers{
+  width: max-content;
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar {
+  grid-area: navbar;
+  position: sticky;
+  top: 0;
+}
+
+.header {
+  grid-area: header;
+  background: #ff7200;
+}
+
+
+.nav-item a:is(:hover, :focus) {
+  color: #ff7200;
+}
+
+
+.main-page {
+  grid-area: main-page;
+  color: black;
+  text-align: center;
+}
+.main-page p {
+  font-size: x-large;
+  text-align: start;
+}
+
+.bellow {
+  grid-area: bellow;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background: #222222;
+}
+
+.navbar-collapse{
+ display: flex;
+ margin-left: 15%;
+}
+.navbar-collapse ul li{
+  margin-left: 20%;
+  font-weight: bold;
+}
+
+.pic{
+  grid-area: pic;
+  display: grid;
+}
+.pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+h1,h2{
+  background: #ff7200;
+}
+.home{
+  height: 30px;
+}
+
+.grid-item1{
+  text-align: center;
+}
+.grid-item2{
+  text-align: center;
+}
+.grid-item2 a{
+  text-decoration: none;
+  color: #fff;
+  margin: 10px;
+}
+.grid-item3{
+  text-align: center;
+}
+
+.grid-item2 ion-icon{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 0px;
+  padding-top: 1px;
+  position: relative;
+  transition: .3s ease;
+}
+.grid-item2 ion-icon:hover{
+  color: #ff7200;
+}
