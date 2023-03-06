@@ -8,6 +8,7 @@ class QuotationForm(ModelForm):
     class Meta:
         model = Quotation
         fields = ('name', 'email', 'requirement')
+        
 
 
 class TrialForm(forms.Form):
