@@ -7,7 +7,7 @@ from django import forms
 class QuotationForm(ModelForm):
     class Meta:
         model = Quotation
-        fields = ('name', 'email', 'phone', 'requirement')
+        fields = ('name', 'email', 'requirement')
 
 
 class TrialForm(forms.Form):
