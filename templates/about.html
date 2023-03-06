@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin: 0 0 20px 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+        <img src="{% static 'img/logo.jpg' %}" alt="Company logo">
+        <p>We are a team of dedicated professionals committed to providing top-quality products and services to our
+            customers. With years of experience in the industry, we have a reputation for excellence and a track record
+            of success. Our goal is to exceed our customers' expectations every time they work with us.</p>
+        <p>Our company was founded in 2019 and has grown significantly since then. We are constantly innovating and
+            looking for new ways to improve our products and services, and we are always looking for talented
+            individuals to join our team. If you are interested in working with us, please don't hesitate to get in
+            touch.</p>
+
+    </div>
+</body>
+
+</html>

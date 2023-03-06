@@ -48,3 +48,11 @@ def send_message(request):
         phone = request.POST['phone']
         print(email, name, phone)
     return render(request, 'message.html', {})
+
+
+def about_page(request):
+    return render(request, 'about.html')
+
+
+def all_services(request):
+    return render(request, 'services.html')
