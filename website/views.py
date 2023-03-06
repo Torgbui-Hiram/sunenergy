@@ -25,8 +25,10 @@ def get_quote(request):
             email = request.POST['email']
             name = request.POST['name']
             phone = request.POST['phone']
+            # Message using twilio
             client.messages.create(to=phone, from_=config('TWILIO_PHONE_NUMBER'), body='Thank you for requesting a quote from Sunenergy'
                                    )
+            # Email using google smtp
             send_mail(subject=subj, message=mes, from_email=config(
                 'EMAIL_HOST_USER'), recipient_list=[email,], fail_silently=True)
             messages.success(
